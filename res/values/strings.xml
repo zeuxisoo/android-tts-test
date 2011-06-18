@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="speak_language_title">Please choose language to speak</string>
+    <string name="app_name">TTSTest</string>
+    <string name="speak_artile_title">Please choose artile to speak</string>
+</resources>

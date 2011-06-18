@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/button_speak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Speak" />
+        <Button android:id="@+id/button_stop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Stop" android:layout_below="@+id/button_speak" />
+        <SeekBar android:id="@+id/speak_rate" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/button_speak" />
+        <TextView android:id="@+id/speak_rate_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/button_speak" android:layout_below="@+id/speak_rate" />
+        <SeekBar android:id="@+id/speak_pitch" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/button_speak" android:layout_below="@+id/speak_rate_label" />
+        <TextView android:id="@+id/speak_pitch_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/button_speak" android:layout_below="@+id/speak_pitch" />
+    </RelativeLayout>
+    <Spinner android:id="@+id/speak_language" android:layout_width="fill_parent" android:layout_height="wrap_content" android:prompt="@string/speak_language_title" />
+    <Spinner android:id="@+id/speak_article" android:layout_width="fill_parent" android:layout_height="wrap_content" android:prompt="@string/speak_artile_title" />
+    <EditText android:gravity="top" android:id="@+id/speak_area" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>
